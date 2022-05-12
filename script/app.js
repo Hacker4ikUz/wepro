@@ -40,7 +40,7 @@ function createElemHeader(links) {
     let header = document.querySelector('header')
     let left = document.createElement('div')
     let left_img = document.createElement('img')
-    let a = document.createElement('a')
+    // let a = document.createElement('a')
     let right = document.createElement('div')
     let right_img = document.createElement('img')
     let btn = document.createElement('button')
@@ -53,12 +53,14 @@ function createElemHeader(links) {
     right_img.src = './img/menu.svg'
     right_img.style.cursor = 'pointer'
     
+    left.append(left_img)
     for(let item of links){
+        let a = document.createElement('a')
         a.innerHTML = item.name
         a.href = item.link
+        left.append(a)
     }
     
-    left.append(left_img,a)
     right.append(btn,right_img)
     header.append(left,right)
     
