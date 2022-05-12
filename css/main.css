@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Gilroy';
+}
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    padding: 20px 30px;
+}
+.left{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.left a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.left img {
+    width: 90px;
+}
+.right{
+    display: flex;
+    gap: 20px;
+}
+.right img {
+    width: 35px;
+}
+.right img:hover{
+    opacity: 0.5;
+}
+.right .button {
+    background: blue;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.right .button:hover{
+    transform: translateY(-3px);
+    background: rgb(20, 20, 219);
+}
+.navv {
+    left: 0;
+    z-index: 100;
+}
+.modleft {
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+}
+.leftw {
+    position: relative;
+    z-index: 2;
+    width: 350px;
+    height: 100vh;
+    background: #fff;
+    left: 0;
+    padding: 30px;
+    transition: .1s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+}
+.blackimg {
+    width: 110px;
+    margin-bottom: 30px;
+}
+main {
+    padding-top: 160px;
+    padding-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.groups {
+    display: flex;
+    gap: 10px;
+}
+.itemm {
+    width: 250px;
+    background: #f6f7fb;
+    padding: 30px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.09);
+}
+.range {
+    margin: 16px 0;
+    height: 6px;
+    border-radius: 20px;
+    background: #c4c4c4;
+    overflow: hidden;
+}
+.range .line {
+    height: 100%;
+    left: 0;
+    width: 25%;
+    background-color: #2b41f0;
+    border-radius: 20px;
+}
+.grbtn {
+    margin-top: 20px;
+    background: none;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.grbtn:hover{
+    transform: translateY(-3px);
+}
+ul {
+    list-style-type: none;
+}
